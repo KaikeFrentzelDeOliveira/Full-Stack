@@ -1,35 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Kaike Frentzel de Oliveira</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaike Frentzel de Oliveira</title>
+  <link rel="stylesheet" href="stylle.css">
 </head>
 <body>
-
-    <!-- Menu de navegação -->
-    <nav>
-        <a href="#sobre">Sobre Mim</a> |
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">Kaike</h1>
+      <nav>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#educacao">Educação</a>
+        <a href="#experiencia">Experiência</a>
         <a href="projetos.html">Projetos</a>
-    </nav>
+      </nav>
+    </div>
+  </header>
 
-    <hr>
+  <main class="container">
+    <section id="sobre" class="intro">
+      <img src="img/eu.png" alt="Foto de Kaike" class="foto-perfil">
+      <div>
+        <h2>Olá! Eu sou Kaike Frentzel de Oliveira</h2>
+        <p>Tenho 18 anos, nasci em Ribeirão Preto e moro em São Bernardo do Campo desde pequeno.</p>
+      </div>
+    </section>
 
-    <h1 id="sobre">Kaike Frentzel de Oliveira</h1>
+    <section id="educacao">
+      <h2>🎓 Educação</h2>
+      <p>Formado no Colégio CAMP.</p>
+      <p>Atualmente curso Ciência de Dados e Inteligência Artificial na FEI.</p>
+    </section>
 
-    <h2>Sobre Mim</h2>
-    <p>Meu nome é Kaike Frentzel de Oliveira, tenho 18 anos.</p>
-    <p>Nasci em Ribeirão Preto, mas moro em São Bernardo do Campo a minha vida toda.</p>
+    <section id="experiencia">
+      <h2>💼 Experiência Profissional</h2>
+      <div class="experiencias">
+        <div class="card">
+          <img src="img/md.png" alt="McDonald's">
+          <p>Trabalhei como Jovem Aprendiz no McDonald's por 1 ano.</p>
+        </div>
+        <div class="card">
+          <img src="img/ibis.png" alt="Hotel Ibis">
+          <p>Atualmente trabalho com reservas no Hotel Ibis.</p>
+        </div>
+      </div>
+    </section>
 
-    <h2>Educação</h2>
-    <p>Me formei no colégio CAMP.</p>
-    <p>Atualmente, faço faculdade na FEI, cursando Ciência de Dados e Inteligência Artificial.</p>
+    <section id="projetos">
+      <h2>📍 Conheça a minha faculdade</h2>
+      <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9CKhxsUuD84?si=csx6VjFJ77buNCbk" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 
-    <h2>Experiência Profissional</h2>
-    <p>Já trabalhei no McDonald's durante um ano como Jovem Aprendiz.</p>
-    <p>Hoje trabalho com reservas no Hotel Ibis.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12..." width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
 
-    <h2>Meus Projetos</h2>
-    <p><a href="projetos.html">Clique aqui para ver meus projetos</a></p>
-
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kaike Frentzel de Oliveira</p>
+    </div>
+  </footer>
 </body>
 </html>
