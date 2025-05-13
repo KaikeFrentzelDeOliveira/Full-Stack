@@ -1,35 +1,31 @@
-const canvas = document.getElementById("meuCanvas");
-const ctx = canvas.getContext("2d");
+const canvas = document.getElementById('animationCanvas');
+const ctx = canvas.getContext('2d');
 
-const img = new Image();
-img.src = 'menino.png'; 
+canvas.width = 300;
+canvas.height = 300;
 
-let pos = { x: canvas.width / 2, y: canvas.height / 2 };
-const imgSize = 50;
+const image = new Image();
+image.src = 'https://example.com/your-image.png';
 
-img.onload = () => {
-  draw();
+image.onload = function() {
+  drawImageAtMousePosition();
 };
 
-canvas.addEventListener("mousemove", (e) => {
-  const rect = canvas.getBoundingClientRect();
-  let x = e.clientX - rect.left - imgSize / 2;
-  let y = e.clientY - rect.top - imgSize / 2;
+function drawImageAtMousePosition() {
+  canvas.addEventListener('mousemove', function(event) {
+    const mouseX = event.offsetX;
+    const mouseY = event.offsetY;
+    const imgWidth = image.width;
+    const imgHeight = image.height;
+    const x = mouseX - imgWidth / 2;
+    const y = mouseY - imgHeight / 2;
 
- 
-  x = Math.max(0, Math.min(x, canvas.width - imgSize));
-  y = Math.max(0, Math.min(y, canvas.height - imgSize));
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(image, x, y);
+  });
 
-  pos = { x, y };
-  draw();
-});
-
-
-canvas.addEventListener("mouseleave", () => {
-  draw();
-});
-
-function draw() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.drawImage(img, pos.x, pos.y, imgSize, imgSize);
+  canvas.addEventListener('mouseout', function() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(image, canvas.width / 2 - image.width / 2, canvas.height / 2 - image.height / 2);
+  });
 }

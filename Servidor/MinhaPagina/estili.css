@@ -1,8 +1,111 @@
-#novoh1{
-    color:pink;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background-color: #111;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  nav a {
+    color: #ccc;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #fff;
+  }
+  
+  #novoh1 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    color: #fff;
+    border-bottom: 2px solid #444;
+    padding-bottom: 0.5rem;
+  }
+  
+  p {
+    color: #ccc;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  ul {
+    list-style-type: square;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+  }
+  
+  a {
+    color: #1abc9c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #e00000;
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #111;
+    color: #aaa;
     text-align: center;
-}
-
-body{
-    background-color: black;
-}
+    padding: 2rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid #222;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav {
+      margin-top: 1rem;
+    }
+  
+    nav a {
+      display: inline-block;
+      margin: 10px;
+    }
+  }
+  
