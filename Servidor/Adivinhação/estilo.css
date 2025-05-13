@@ -1,0 +1,42 @@
+body{
+    background-color: beige;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    background: beige;
+  
+
+}
+
+h1 {
+    color: #333;
+    
+
+}
+
+input {
+   
+    display: flex;
+    justify-content: center;
+    
+}
+
+button {
+   
+    font-size: 16px;
+    cursor: pointer;
+    
+    margin-top: 10px;
+}
+
+#feedback {
+    font-size: 18px;
+    margin-top: 10px;
+    
+}
