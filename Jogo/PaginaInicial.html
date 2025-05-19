@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title>Jogo do Labirinto</title>
+        <link rel="stylesheet" href="PaginaInical.css" />
+    </head>
+    <body>
+
+        <div id="navigationContainer">
+            <a href="SobreOsDevs.html" id="aboutGameBtn">Conheça sobre os desenvolvedores</a>
+            <a href="ComoFunciona.html" id="aboutCreatorsBtn">Como funciona o jogo</a>
+        </div>
+
+        <div id="gameContainer">
+            <canvas id="mazeCanvas" width="350" height="600" aria-label="Labirinto interativo onde você controla um círculo azul para chegar ao quadrado verde." aria-describedby="desc"></canvas>
+
+        <div id="message" role="alert" aria-live="assertive" tabindex="0">
+            <p>Você ganhou!</p>
+            <button id="restartBtn" aria-label="Reiniciar o jogo">Jogar novamente</button>
+        </div>
+
+        </div>
+
+        <p id="desc" hidden>
+            Labirinto onde você controla um círculo azul movendo o mouse ou toque. Evite tocar nas paredes; se tocar, o jogo reinicia. Chegue no quadrado verde para vencer.
+        </p>
+
+    <script src="maze.js"></script>
+
+</body>
+
+</html>
