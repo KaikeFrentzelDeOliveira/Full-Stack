@@ -1,0 +1,45 @@
+.inicio{
+    display: flex;
+    background-color: bisque;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 3px;
+}
+
+.lista{
+    background-color: rgb(92, 171, 216);
+    display: flex;
+    justify-content:space-evenly;
+    font-weight: bolder;
+
+}
+
+.livros{
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .tt{
+    text-align: center;
+    font-weight: bolder;
+ }
+
+
+.intro{
+    text-align: center;
+    color: blueviolet;
+} 
+
+.videos{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+.tabelas{
+    display: flex;
+    justify-content:center ;
+    border: 2px;
+    color: tomato;
+}
