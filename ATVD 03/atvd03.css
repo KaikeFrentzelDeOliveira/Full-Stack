@@ -1,3 +1,7 @@
+body{
+    background-color: lightgray;
+}
+
 .inicio{
     display: flex;
     background-color: bisque;
@@ -37,9 +41,58 @@
 
 }
 
-.tabelas{
-    display: flex;
-    justify-content:center ;
-    border: 2px;
-    color: tomato;
+.tabelas table {
+    border: 2px dashed red;
+    border-collapse: collapse;
+    width: 400px;
+    text-align: center;
 }
+
+.tabelas td {
+    border: 1px solid gray;
+    padding: 8px;
+    color: black;
+    font-weight: bold;
+}
+
+.tabelas {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.BoxAmarelo {
+  background-color: yellow;
+  margin: 20px auto;
+  padding: 10px;
+  width: 600px;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+}
+
+.BoxAmarelo {
+  background-color: yellow;
+  margin: 20px auto;
+  padding: 20px;
+  width: 600px;
+  font-weight: bold;
+  color: black;
+}
+.BoxAmarelo a{
+    color: red; 
+}
+
+.centro{
+    text-align: center;
+}
+
+.final{
+    display: flex;
+    background-color: bisque;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
