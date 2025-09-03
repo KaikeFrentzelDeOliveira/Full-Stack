@@ -94,5 +94,20 @@ body{
     align-items: center;
 }
 
+.voltar {
+    color: rgb(92, 255, 71);
+    border: 2px solid rgb(0, 0, 0);   
+    padding: 10px 20px;            
+    margin: 10px;
+    display: inline-block;        
+    border-radius: 8px;           
+    background-color: lightgray;      
+}
+
+.voltar :hover{
+    color: rgb(255, 0, 0);
+}
+
+
 
 
